@@ -81,7 +81,6 @@ body {
 }
 
 .link.current {
-  color: var(--text-color);
   border-bottom: 4px solid var(--secondbgcbtn);
   color: var(--secondbgcbtn);
    
@@ -113,11 +112,10 @@ body {
   margin-left: 40px;
 }
 .link:hover,
-.link:focus {
-  color: var(--secondbgcbtn);
-}
+.link:focus,
 .link:active {
-  color: var(--accent-color);
+  color: var(--secondbgcbtn);
+
 }
 .link {
   display: block;
