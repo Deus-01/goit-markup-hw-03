@@ -44,13 +44,15 @@ img {
   padding-bottom: 120px;
 }
 
-.section:first-of-type {
-  background-color: var(--main-color);
-  text-align: center;
-}
 
 .section:last-of-type {
   background-color: var(--secondbgc);
+}
+
+.section.project {
+padding-top: 0;
+padding-bottom: 120px;
+background-color: var(--bgc);
 }
 
 a {
@@ -71,7 +73,7 @@ body {
 }
 /*--------------------- head */
 
-.header {
+.header.portf {
   border-bottom: 1px solid var(--bgcbtnfilter);
 }
 
@@ -81,9 +83,8 @@ body {
 }
 
 .link.current {
-  border-bottom: 4px solid var(--secondbgcbtn);
-  color: var(--secondbgcbtn);
-   
+color: var(--secondbgcbtn);
+  
 }
 
 /*--------------------- logo */
@@ -161,9 +162,15 @@ body {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
+} 
+
+.hero{
+  background-color: var(--main-color);
 }
+
 .hero > .container {
   padding: 188px 0;
+  text-align: center;
   text-align: center;
 }
 
@@ -191,13 +198,16 @@ body {
 }
 
 /* --------------------- Features */
+.features {
+ display: none;
+}
 
 .future-block {
   display: flex;
 }
 
 .future-block .item {
-  width: 264px;
+flex-basis: calc((100% -24*3)/4);
 }
 
 .future-block .head-name {
@@ -224,9 +234,10 @@ body {
 
 /*--------------------- What we are doing */
 
-.wwad {
-  padding-bottom: 72px;
+.section.doing {
+  padding-top: 0;
 }
+
 
 .what-pict {
   display: flex;
@@ -245,7 +256,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 /*--------------------- Our team */
 
@@ -263,17 +274,18 @@ body {
 }
 
 .team-list .head-name {
-  padding-top: 32px;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-
-.team-list .position {
-  padding-top: 8px;
+    
+.our-head {
+  padding-top: 32px;
   padding-bottom: 32px;
+}
+.team-list .position {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -343,27 +355,29 @@ body {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 72px;
-  margin-bottom: 120px;
+  margin-top: 72px;
 }
 
 .cards {
-  margin-right: 21px;
+  margin-right: 24px;
   margin-bottom: 48px;
-  border: 1px solid var(--bgcbtnfilter);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
-.project-name {
-  margin-top: 32px;
-  padding-left: 16px;
+.project-head {
+padding-left: 16px;
+padding-top: 32px;
+padding-bottom: 32px;
+border-left: 1px solid var(--bgcbtnfilter);
+border-right: 1px solid var(--bgcbtnfilter);
+border-bottom: 1px solid var(--bgcbtnfilter);
 }
+
 
 .project-text {
   line-height: 1.5px;
   letter-spacing: 0.02em;
   margin-top: 15px;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 .cards:nth-child(3n) {
