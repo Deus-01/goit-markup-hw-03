@@ -158,7 +158,6 @@ color: var(--secondbgcbtn);
   letter-spacing: 0.02em;
   color: var(--bgc);
   margin-bottom: 48px;
-  display: flex;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -280,7 +279,13 @@ flex-basis: calc((100% -24*3)/4);
 .our-head {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: var(--bgc);
 }
+
+.our-head .head-name {
+  margin-bottom: 8px;
+}
+
 .team-list .position {
   text-align: center;
   line-height: 1.5;
